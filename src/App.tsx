@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './Components/HomePage';
+import AlbumPage from './Components/AlbumPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     
       <Routes>
             <Route path='/' element={<HomePage />} />
+             <Route path='/:id' element={<AlbumPage  music={music}/>} />
            
           </Routes>
        
