@@ -7,13 +7,14 @@ import HomePage from './Components/HomePage';
 import AlbumPage from './Components/AlbumPage';
 
 function App() {
+ 
   return (
     <div>
     <BrowserRouter>
     
       <Routes>
             <Route path='/' element={<HomePage />} />
-             <Route path='/:id' element={<AlbumPage  music={music}/>} />
+              <Route path='/album/:id' element={<AlbumPage/>} />
            
           </Routes>
        

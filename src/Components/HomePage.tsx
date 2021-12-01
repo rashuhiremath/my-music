@@ -55,7 +55,7 @@ const HomePage = () => {
         {music.map((song) => (
           <Col md={3}>
             <Card style={{ width: "14rem" }}>
-                <Link to={`/${song.id}`}>
+                <Link to={`/album/${song.id}`}>
               <Card.Img variant="top" src={song.album.cover} />
               </Link>
               <Card.Body>
